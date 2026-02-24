@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>호랑가시나무 게스트하우스</title>
+    <title>호랑가시나무 게스트하우스v2</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index_v2.css">
 </head>
 <body>
     <div id="wrap">
@@ -186,30 +186,41 @@
                     <p><button type="submit" id="search_btn">검색</button></p>  
                 </form>
             </div>
-            <!-- 2. info -->
-            <div id="info_bg">
-                <div class="info" class="container_layout">
-                    <h1><a href="#">양림동과 호랑가시나무 언덕</a></h1>
+            <!-- 풀이 태그 -->
+            <!-- 2. 양림동 호랑가시나무 소개 -->
+            <div id="intro_guest_bg"><!-- 배경 -->
+                <div id="intro_guest" class="container_layout"><!-- 콘텐츠 틀 -->
+                    <h1>양림동과 호랑가시나무 언덕</h1>
                     <p>양림동은 20세기 초 서구 선교사들이 광주 최초의 근대식 학교와 병원 등을 설립하면서 본격적인 광주근대화가 시작된 곳으로 광주의 근대역사가 살아 숨 쉬는 역사문화마을입니다. 오랜 세월에도 불구하고 온전하게 보존된 서구식 건축물들과 전통 한옥이 공존하고 있어 광주에서 가장 이국적인 분위기를 느낄 수 있는 곳입니다.</p>
-                    <p class="info_img"><img src="./images/info_img.jpg" alt=""></p>
+                    <p><img src="./images/info_img.jpg" alt=""></p>
                 </div>
             </div>
-            <!-- 3. nearplace -->
-            <div id="near_place" class="container_layout">
-                <h1><a href="#">주변관광지</a></h1>
+            <!-- 3. 관광지 소개 -->
+            <div id="intro_tourlist" class="container_layout">
+                <h1>주변관광지</h1>
                 <p>호랑가시나무언덕 게스트하우스 외부 및 주변전경입니다.</p>
-                <div class="place">
-                    <!-- img 태그를 감싸는 별도의 태그가 하나 더 존재해야지 크기는 변하지않으면서 안에 이미지만 커지도록 만들 수 있음 -->
-                    <a href="#"><p class="place_img"><img src="./images/traval1.jpg" alt=""></p><h2>윈스 브로우 홀</h2></a>
-                    <a href="#"><p class="place_img"><img src="./images/traval2.jpg" alt=""></p><h2>양림동 문화마을</h2></a>
-                    <a href="#"><p class="place_img"><img src="./images/traval3.jpg" alt=""></p><h2>오웬 기념관</h2></a>
-                    <a href="#"><p class="place_img"><img src="./images/traval4.jpg" alt=""></p><h2>호랑가시나무언덕 기념관</h2></a>
-                </div>
+                <ul class="contents">
+                    <li>
+                        <a href="#"><img src="./images/traval1.jpg" alt=""></a>
+                        <h2>윈스 브로우 홀</h2>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/traval1.jpg" alt=""></a>
+                        <h2>윈스 브로우 홀</h2>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/traval1.jpg" alt=""></a>
+                        <h2>윈스 브로우 홀</h2>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/traval1.jpg" alt=""></a>
+                        <h2>윈스 브로우 홀</h2>
+                    </li>
+                </ul>
                 <a href="#" class="more">더 많은 관광지 둘러보기</a>
             </div>
         </main>
         <footer>
-            <a href="./index_v2.html">v2</a>
             <p>2026 &copy; copyright 호랑가시나무게스트하우스</p>
         </footer>
     </div>

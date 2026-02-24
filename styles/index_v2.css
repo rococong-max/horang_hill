@@ -163,13 +163,48 @@
     width: 65px; height: 44px;
     border-radius: 12px; font-size: 0.88rem;
 }
-/* -------------------------- 2. info */
-#wrap main #info_bg {}
-#wrap main #info_bg .info {}
-#wrap main #info_bg .info h1 {}
-#wrap main #info_bg .info h1 a {}
-#wrap main #info_bg .info p {}/* 공통 p */
-#wrap main #info_bg .info h1+p {}
-#wrap main #info_bg .info .info_img {}
-#wrap main #info_bg .info .info_img img {}
-/* ------------------------------------3. near_place */
+/* -------------------------------2,3 공통 디자인 */
+/* -------------------------- 2. 양림동 호랑가시나무 소개 */
+#wrap main #intro_guest_bg {
+    background-color: #f5f5f5;
+}
+#wrap main #intro_guest_bg #intro_guest {}
+#wrap main #intro_guest_bg #intro_guest h1 {}
+#wrap main #intro_guest_bg #intro_guest p {}/* 공통 */
+#wrap main #intro_guest_bg #intro_guest h1+p {}
+#wrap main #intro_guest_bg #intro_guest p:last-child {}
+#wrap main #intro_guest_bg #intro_guest p:last-child img {width: 100%;} /* 반응형으로 제작할 때 설정 */
+/* ------------------------------------3. 관광지 소개 */
+#wrap main #intro_tourlist {}
+#wrap main #intro_tourlist h1 {}
+#wrap main #intro_tourlist p {}
+#wrap main #intro_tourlist .contents {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+#wrap main #intro_tourlist .contents li {
+    width: calc((100% - 60px) / 4);
+}
+#wrap main #intro_tourlist .contents li a {
+    margin-bottom: 10px; display: block;
+    height: 250px;
+    overflow: hidden;
+}
+#wrap main #intro_tourlist .contents li a img {width: 100%;}
+#wrap main #intro_tourlist .contents li a:hover img {width: 120%;}
+#wrap main #intro_tourlist .contents li h2 {
+    font-size: 1.13rem; font-weight: 600;
+}
+#wrap main #intro_tourlist .more {
+    margin: 0 auto; display: block; width: max-content;
+    border-bottom: 1px solid #000;
+    /* block일 때 안정적으로 작동함 */
+    /* 글자(자식)만큼만 인식되도록 함 */
+    /* text-decoration: underline; 밑줄과 글자 사이 여백불가능 */
+}
+/* 
+가운데 정렬
+text-align 부모한테 명령 -> 자식, 자손 인라인 적용
+*/
+#wrap main #intro_tourlist .more:hover {background-color: #ddd;}
