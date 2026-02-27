@@ -33,7 +33,7 @@ body {}
 #wrap header nav #gnb > li .gnb_depth2 {/* 첫번째 서브 */
     background-color: #444;
     position: absolute;
-    width: 160px;
+    width: 178px;
     left: 50%; transform: translateX(-50%); /* adsolute 부모 x축 정중앙 */
     text-align: center;
     display: none;
