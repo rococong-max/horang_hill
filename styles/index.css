@@ -244,7 +244,7 @@
 #wrap main #way .map img {}
 #wrap main #way .public_transport {}
 #wrap main #way .public_transport ul,
-#wrap main #way .public_transport li {color: #555; line-height: 1.8;} /* 그룹 dt, dd */
+#wrap main #way .public_transport li {color: #555; line-height: 1.8;}
 #wrap main #way .public_transport ul {font-size: 1.5rem; font-weight: 700;} /* 공통 */
 #wrap main #way .public_transport li {font-size: 0.94rem;} /* 공통 */
 #wrap main #way .public_transport .bus li:first-child {margin-bottom: 20px;}
