@@ -234,11 +234,11 @@
 /* --------------------------------------------5. way */
 #wrap main #way {}
 #wrap main #way .title {
-    background-color: lightblue;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 0 0 30px;
 }
-#wrap main #way .title h1 {}
+#wrap main #way .title h1 {margin: 0;}
 #wrap main #way .title .res_num {}
 #wrap main #way .map {display: block; margin-bottom: 30px;}
 #wrap main #way .map img {}
@@ -250,3 +250,13 @@
 #wrap main #way .public_transport .bus {}
 #wrap main #way .public_transport .subway {}
 /* ---------------------------------------- footer */
+#wrap footer {}
+#wrap footer #f_bg {background-color: #000;}
+#wrap footer #f_bg #f_txt {}
+#wrap footer #f_bg #f_txt * {
+    font-size: 0.81rem; line-height: 2.0;
+    color: #fff;
+}
+#wrap footer #f_bg #f_txt address {}
+#wrap footer #f_bg #f_txt p {}
+#wrap footer #f_bg #f_txt p a {}
