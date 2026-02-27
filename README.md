@@ -10,7 +10,18 @@
 * 양림동과 호랑가시나무언덕,주변관광지 html, css 태그 풀이
 * html 태그 수정
     * `img` 감싸는 `p` 추가 (마스크로 활용하기 위함)
-* css 선택자 수정 및 재작성 - `info`
+* css 선택자 수정 및 재작성 - `#info`
 ### 2026/02/26
-* css 선택자 수정 및 재작성 -
-* 
+* css 선택자 수정 및 재작성 - `#near_place`
+* html 작성
+    * `#room_res`
+    * `#way`
+* css 작성
+    * `#room_res`
+    * `#way`
+### 2026/02/27
+* html 작성
+    * `footer`
+* css 작성
+    * `footer`
+* **index html, css 완료**
