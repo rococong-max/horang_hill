@@ -1,4 +1,5 @@
 # 호랑가시나무 게스트하우스
+## 작업 기록
 ### 26/01/28
 * main - hero banner
 * main - hero banner + 검색 form HTML 제작 완료
@@ -25,3 +26,21 @@
 * css 작성
     * `footer`
 * **index html, css 완료**
+### 2026/02/27
+* 찾아오시는 길 - dl>dt+dd로 수정 완료
+* form - hover 기능 추가 완료
+* room_cotainer > room*4 - ul>li로 수정 완료
+* 활성화되어있는 방에 class 주기 완료
+### 2026/03/01
+* 방 소개 hover 기능 추가 실패...
+### 2026/03/02
+* 방 소개 hover 기능 추가 성공
+* 부드러운 움직임 설정 및 크기 설정 조정 필요
+## 피드백 내용
+### 1차 피드백 (02/27)
+* 방 소개
+    * 활성화되어있는 방에 class 주기 
+    * hover 기능 추가
+    * room_cotainer > room*4 - ul>li로 수정
+* 찾아오시는 길 - dl>dt+dd로 수정
+* form - hover 기능 추가

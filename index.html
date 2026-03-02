@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -213,22 +214,60 @@
                     <h1>객실 및 예약안내</h1>
                     <p>각 방을 클릭하면 자세한 정보를 보실 수 있습니다. 가격은 성수기/비성수기 동일합니다. 자세한건 예약안내(실시간 예약하기)를 클릭하여 확인하세요.</p>
                     <ul class="room_container">
-                        <li class="room room1 active">
+                        <li class="active room1">
                             <a href="#"><p class="r_img"><img src="./images/room1.jpg" alt=""></p><h2 class="r_name">포사이드방</h2></a>
                             <p class="r_info">1층 2인(최대4인 방)<br>
                                 시원한 큰 창과 남향으로 햇빛이 잘들어오는 예쁜 방입니다.</p>
                         </li>
-                        <li class="room room2">
+                        <li class="room room2" 
+                            onmouseover="
+                            $('.room2').addClass('active');
+                            $('.room2').removeClass('room');
+                           // $('.room1').addClass('room');
+                           // $('.room1').removeClass('active')
+                            $('.room1, .room3, .room4').addClass('room');
+                            $('.room1, .room3, .room4').removeClass('active');"
+                            onmouseout="
+                            $('.room2').addClass('room');
+                            $('.room2').removeClass('active');
+                            $('.room1').addClass('active');
+                            $('.room1').removeClass('room');
+                            "
+                        >
                             <a href="#"><p class="r_img"><img src="./images/room2.jpg" alt=""></p><h2 class="r_name">우월순방</h2></a>
                             <p class="r_info">1층 2인(최대4인 방)<br>
                                 시원한 큰 창과 남향으로 햇빛이 잘들어오는 예쁜 방입니다.</p>
                         </li>
-                        <li class="room room3">
+                        <li class="room room3"
+                            onmouseover="
+                            $('.room3').addClass('active');
+                            $('.room3').removeClass('room');
+                            $('.room1, .room2, .room4').addClass('room');
+                            $('.room1, .room2, .room4').removeClass('active');"
+                            onmouseout="
+                            $('.room3').addClass('room');
+                            $('.room3').removeClass('active');
+                            $('.room1').addClass('active');
+                            $('.room1').removeClass('room');
+                            "
+                        >
                             <a href="#"><p class="r_img"><img src="./images/room3.jpg" alt=""></p><h2 class="r_name">배유지방</h2></a>
                             <p class="r_info">1층 2인(최대4인 방)<br>
                                 시원한 큰 창과 남향으로 햇빛이 잘들어오는 예쁜 방입니다.</p>
                         </li>
-                        <li class="room room4">
+                        <li class="room room4"
+                            onmouseover="
+                            $('.room4').addClass('active');
+                            $('.room4').removeClass('room');
+                            $('.room1, .room2, .room3').addClass('room');
+                            $('.room1, .room2, .room3').removeClass('active');"
+                            onmouseout="
+                            $('.room4').addClass('room');
+                            $('.room4').removeClass('active');
+                            $('.room1').addClass('active');
+                            $('.room1').removeClass('room');
+                            "
+                        >
                             <a href="#"><p class="r_img"><img src="./images/room4.jpg" alt=""></p><h2 class="r_name">오웬방</h2></a>
                             <p class="r_info">1층 2인(최대4인 방)<br>
                                 시원한 큰 창과 남향으로 햇빛이 잘들어오는 예쁜 방입니다.</p>
